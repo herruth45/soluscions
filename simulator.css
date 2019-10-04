@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "LDF Comic Sans";
+  src: url(./LDFComicSans.ttf);
+}
+
+#quote {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-transform: uppercase;
+  font-size: 15vh;
+  font-family: 'LDF Comic Sans', 'Comic Sans MS', sans-serif;
+  z-index: 3;
+}
+
+#quote, #images {
+  text-align: center;
+  z-index: 10;
+  color: white;
+  margin: 0;
+}
+
+#images {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 60vh;
+  overflow: hidden;
+}
+
+#images img {
+  width: 30vmin;
+  animation: rotation 1.08s infinite linear;
+  margin: 0 5vmin;
+}
+
+@-webkit-keyframes rotation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(359.99deg); }
+}
+
+body {
+  bacground-color: red;
+  animation: bg 2.16s infinite linear;
+}
+
+@keyframes bg {
+  0% { background: red; }
+  10% { background: orange; }
+  20% { background: yellow; }
+  30% { background: forestgreen; }
+  40% { background: darkgreen; }
+  50% { background: lightgreen; }
+  60% { background: lightblue; }
+  70% { background: turquoise; }
+  80% { background: blue; }
+  90% { background: purple; }
+  100% { background: red; }
+}
